@@ -60,7 +60,7 @@ let i3 = 0
 while (i3 < positiveNumbers.length) {
   if ((positiveNumbers[i3])%2 === 0) {
     console.log(positiveNumbers[i3]);
-  }else {console.log("");}
+  }
   i3++
 }
 
@@ -75,10 +75,9 @@ const mixedSignNumbers = [3, 15, 14, -2, -3, -8, -103, 4];
 let i4 = 0
 
 while (i4 < mixedSignNumbers.length) {
-  if ((mixedSignNumbers[i4])%2 <0 || (mixedSignNumbers[i4])%2 > 0) {
-    console.log("");
-  }else {
-  console.log(mixedSignNumbers[i4]);
+  if (mixedSignNumbers[i4]%2 ===0) 
+  {
+    console.log(mixedSignNumbers[i4]);
   }
   i4++
 }
@@ -189,14 +188,20 @@ while (i9 < students9.length) {
     'Arnold',
     'Andy'
   ];
-  let students10 = student.splice(3,8)
-  let i10=0
-  while (i10 < students10.length) {
-    console.log(students10[i10]);
-    i10++
-    }
+  // let students10 = student.splice(3,8)
+  // let i10=0
+  // while (i10 < students10.length) {
+  //   console.log(students10[i10]);
+  //   i10++
+  //   }
   
-
+  let students10 = []
+  let i10=3
+  while (i10< 11) {
+      students10.push(student[i10])
+      console.log(student[i10]);
+      i10++
+      }
 
 
   console.log("\n");
@@ -227,7 +232,7 @@ while (i9 < students9.length) {
   // Pull the items at indices 4-6 (inclusive) from the following array using .splice (NOT .slice!), then console.log out each item from the ORIGINAL array. Note that .splice DOES change the original array.
   const dinosaurs = ['Velociraptor', 'T-Rex', 'Stegosaurus', 'Triceratops', 'Dimetrodon', 'Allosaur', 'Spinosaurus', 'Gigantosaur']
   // Challenge 12 Code
-  let dinosaurs2 = dinosaurs.splice(4,7)
+  let dinosaurs2 = dinosaurs.splice(4,3)
   let i12=0
   while (i12 < dinosaurs.length) {
     console.log(dinosaurs[i12]);
